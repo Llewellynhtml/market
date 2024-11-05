@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+/* General reset and styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
