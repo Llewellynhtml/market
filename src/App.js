@@ -9,6 +9,7 @@ import Checkout from './components/Checkout';
 import Register from './components/Register';
 import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
+import Marketplace from './components/Marketplace'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+        <Route path="/" element={<Marketplace />} /> {/* Use Marketplace as the main page */}
           <Route path="/" element={<ProductList />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
